@@ -1,11 +1,11 @@
-%global gitdate 20180802
-%global commit0 1999c28f6367fca903297e9c99a4d9e03fe921ae
+%global gitdate 20181026
+%global commit0 c913e0ee62b82566b414ea61834b638f82eee042
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           mkchromecast
 Version:        0.3.9
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Cast audio and video from your Linux desktop to your Google Cast device
 Group:          Applications/Multimedia
 License:        MIT
@@ -77,6 +77,9 @@ and it streams via node.js, ffmpeg, or avconv.
 
 
 %changelog
+
+* Fri Oct 26 2018 David Va <davidva AT tuta DOT io> 0.3.9.2-1 
+- Updated to current commit
 
 * Thu Aug 02 2018 David Va <davidva AT tuta DOT io> 0.3.9.1-1 
 - Initial build
